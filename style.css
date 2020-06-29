@@ -18,3 +18,58 @@ body {
 - Visual Hierarchy
 
 */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 60%;
+  height: 100vh;
+}
+
+.container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  background: #e4f0ff;
+  height: 100vh;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #0165e7;
+}
+
+span {
+  font-size: 0.4rem;
+  background: #dedede;
+  color: black;
+  margin: 0 1.5rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+/* span:before {
+  content: '1:30 PM';
+  font-size: 15rem;
+  position: absolute;
+  color: #f4f4f4;
+  z-index: -1;
+  white-space: nowrap;
+  left: 30%;
+  top: 15%;
+} */
+
+p {
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  border-left: 4px solid grey;
+}
